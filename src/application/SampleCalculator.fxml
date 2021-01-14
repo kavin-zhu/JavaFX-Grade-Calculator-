@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="572.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar prefHeight="57.0" prefWidth="640.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="551.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <VBox layoutX="111.0" layoutY="14.0" prefHeight="349.0" prefWidth="173.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="166.0" text="Points Awarded">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtA1Points" prefHeight="27.0" prefWidth="580.0" />
+                  <Separator prefHeight="34.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA2Points" />
+                  <Separator prefHeight="43.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA3Points" prefHeight="27.0" prefWidth="246.0" />
+                  <Separator prefHeight="43.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA4Points" prefHeight="25.0" prefWidth="173.0" />
+                  <Separator prefHeight="41.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA5Points" />
+               </children>
+            </VBox>
+            <Label layoutX="312.0" layoutY="421.0" text="Result:">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCalculate" layoutX="102.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleCalculations" prefHeight="50.0" prefWidth="192.0" text=" Calculate Grade Average">
+               <opaqueInsets>
+                  <Insets right="44.0" />
+               </opaqueInsets>
+            </Button>
+            <Label layoutX="4.0" layoutY="54.0" prefHeight="32.0" prefWidth="90.0" text="Assignment  #1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <VBox layoutX="300.0" layoutY="14.0" prefHeight="349.0" prefWidth="199.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="195.0" text="Total Points for the Assignment">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtA1TotalPoints" prefHeight="22.0" prefWidth="199.0" />
+                  <Separator prefHeight="34.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA2TotalPoints" />
+                  <Separator prefHeight="43.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA3TotalPoints" prefHeight="27.0" prefWidth="246.0" />
+                  <Separator prefHeight="43.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA4TotalPoints" prefHeight="25.0" prefWidth="173.0" />
+                  <Separator prefHeight="41.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA5TotalPoints" />
+               </children>
+            </VBox>
+            <VBox layoutX="515.0" layoutY="14.0" prefHeight="349.0" prefWidth="173.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="166.0" text="Assignment Weight">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtA1Weights" prefHeight="22.0" prefWidth="173.0" />
+                  <Separator prefHeight="34.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA2Weights" />
+                  <Separator prefHeight="43.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA3Weights" prefHeight="27.0" prefWidth="246.0" />
+                  <Separator prefHeight="43.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA4Weights" prefHeight="25.0" prefWidth="173.0" />
+                  <Separator prefHeight="41.0" prefWidth="173.0" />
+                  <TextField fx:id="txtA5Weights" />
+               </children>
+            </VBox>
+            <Label fx:id="lblAverage" layoutX="389.0" layoutY="419.0" prefHeight="32.0" prefWidth="280.0" />
+            <Label layoutX="5.0" layoutY="115.0" prefHeight="32.0" prefWidth="90.0" text="Assignment  #2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="182.0" prefHeight="32.0" prefWidth="90.0" text="Assignment  #3">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="251.0" prefHeight="32.0" prefWidth="90.0" text="Assignment  #4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="5.0" layoutY="324.0" prefHeight="32.0" prefWidth="90.0" text="Assignment  #5">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
